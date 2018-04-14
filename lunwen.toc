@@ -1,0 +1,24 @@
+\ttl@change@i {\@ne }{section}{0em}{\sihao \hei }{第\,\thecontentslabel \,章\hspace *{1em}}{}{\dotfill \contentspage }\relax 
+\ttl@change@v {section}{}{}{\addvspace {-3mm}}\relax 
+\contentsline {section}{致谢}{I}
+\contentsline {section}{摘要}{III}
+\contentsline {section}{\fontfamily {phv}\selectfont Abstract}{IV}
+\contentsline {section}{目录}{V}
+\contentsline {section}{\fontfamily {phv}\selectfont Contents}{VI}
+\contentsline {section}{\numberline {1}引言}{1}
+\contentsline {section}{\numberline {2}预备知识}{2}
+\contentsline {subsection}{\numberline {2.1}复平面上的度量}{2}
+\contentsline {subsection}{\numberline {2.2}复平面上两点之间的距离}{2}
+\contentsline {subsection}{\numberline {2.3}复平面上的曲率公式}{3}
+\contentsline {subsection}{\numberline {2.4}正规族理论}{3}
+\contentsline {section}{\numberline {3}Kobayashi 度量的定义和性质}{4}
+\contentsline {subsection}{\numberline {3.1}Kobayashi 度量的定义}{4}
+\contentsline {subsection}{\numberline {3.2}Kobayashi 度量的性质}{4}
+\contentsline {subsection}{\numberline {3.3}Kobayashi 度量与庞加莱度量}{6}
+\contentsline {section}{\numberline {4}Kobayashi 度量的应用}{8}
+\contentsline {subsection}{\numberline {4.1}Kobayashi 度量与全纯映射}{8}
+\contentsline {subsection}{\numberline {4.2}Kobayashi 度量与双曲流型}{9}
+\contentsline {subsection}{\numberline {4.3}Kobayashi 度量与Picard定理的推广}{12}
+\contentsline {section}{参考文献}{14}
+\contentsline {section}{附录}{15}
+\contentsfinish 

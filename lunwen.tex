@@ -1,0 +1,650 @@
+%Manyuan Tao, 05/08/2016
+\documentclass[a4paper,12pt,twoside]{article}
+\usepackage{ccmap} 
+\usepackage{CJK}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{graphicx}
+	\graphicspath{{figures/}}	%在tex目录下新建figures文件夹存放所有图片
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{mathrsfs}
+\usepackage{bm,array}
+\usepackage{subfigure}
+\usepackage{indentfirst}
+	\setlength{\parindent}{2em}
+\usepackage{enumerate}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,extarrows}
+\usepackage{cite}
+\usepackage[labelsep=space]{caption}
+\usepackage{float}
+\usepackage{fancyhdr}		%设置页眉页脚
+	\renewcommand{\headrulewidth}{0.5pt}
+	\renewcommand{\sectionmark}[1]{\markboth{\xiaowuhao 第\,\thesection\,章\hspace*{1em}#1}{\xiaowuhao 复平面上的Kobayashi度量浅析}}
+\usepackage{pdfpages}
+\usepackage{titlesec}	%设置章节标题格式
+	\titleformat{\section}{\xiaosanhao\hei}{第\,\thesection\,章}{1em}{}
+	\titleformat{\subsection}{\sihao\hei}{\thesubsection}{1em}{}
+	\titleformat{\subsubsection}{\xiaosihao\hei}{\thesubsubsection}{0em}{}
+	\titlespacing{\section}{0pt}{0pt}{1em}
+	\titlespacing{\subsection}{0pt}{0pt}{0em}
+	\titlespacing{\subsubsection}{0pt}{0pt}{0em}
+\usepackage{titletoc}		%设置目录内容格式
+	\titlecontents{section}[0em]{\sihao\hei}{第\,\thecontentslabel\,章\hspace*{1em}}{}{\dotfill\contentspage}[\addvspace{-3mm}]
+	\titlecontents{subsection}[1em]{\xiaosihao\hei}{\,\,\thecontentslabel\hspace*{1em}}{}{\dotfill\contentspage}[\addvspace{-3mm}]
+\renewcommand{\figurename}{\wuhao\bf 图}
+\renewcommand{\thefigure}{\thesection-\arabic{figure}}
+\renewcommand{\contentsname}{\xiaosanhao\hei \centerline{目录}}
+\renewcommand{\refname}{\xiaosanhao\hei 参考文献}
+%\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}	%若想引用参考文献时使用上标数字可使用此句
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{Proposition}[theorem]{Proposition}
+\newtheorem{Remark}[theorem]{Remark}
+\newtheorem{remark}[theorem]{remark}
+\newtheorem{Corollary}[theorem]{Corollary}
+\numberwithin{equation}{section}	%公式编号跟随章节
+\allowdisplaybreaks
+
+\renewcommand{\baselinestretch}{1.5}	%1.5倍行距
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}		%设置字号
+\newcommand{\sanhao}{\fontsize{16pt}{\baselineskip}\selectfont}
+\newcommand{\xiaosanhao}{\fontsize{15pt}{\baselineskip}\selectfont}
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
+
+\newcommand{\song}{\CJKfamily{song}}    %设置字体
+\newcommand{\hei}{\CJKfamily{hei}}
+\newcommand{\Arial}{\fontfamily{phv}\selectfont}
+
+
+
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\renewcommand{\sectionmark}[1]{\markboth{\xiaowuhao 第\,\thesection\,章\hspace*{1em}#1}{\xiaowuhao 复平面上的Kobayashi度量浅析}}
+\titleformat{\section}{\xiaosanhao\hei}{第\,\thesection\,章}{1em}{}
+\titlecontents{section}[0em]{\sihao\hei}{第\,\thecontentslabel\,章\hspace*{1em}}{}{\dotfill\contentspage}[\addvspace{-3mm}]
+
+%----------------------------------------------------------------------------------------
+%	封面
+%----------------------------------------------------------------------------------------
+
+\includepdfmerge{cover.pdf}	%制作好封面的pdf后插入
+
+\newpage
+\thispagestyle{empty}	%封面的背面
+\quad
+
+%----------------------------------------------------------------------------------------
+%	诚信书
+%----------------------------------------------------------------------------------------
+
+\includepdfmerge{chengxin.pdf}		%制作好诚信书的pdf后插入
+
+\newpage
+\thispagestyle{empty}	%诚信书的背面
+\quad
+
+%----------------------------------------------------------------------------------------
+%	致谢
+%----------------------------------------------------------------------------------------
+
+\newpage
+\thispagestyle{fancy}
+\chead{\xiaowuhao 致谢}
+\cfoot{\xiaowuhao \thepage}
+
+\section*{\centerline{致谢}}
+\addcontentsline{toc}{section}{致谢}
+
+\setcounter{page}{0}
+\pagenumbering{Roman}
+
+本学位论文
+
+\newpage
+\thispagestyle{fancy}		%致谢的背面
+\chead{\xiaowuhao 复平面上的Kobayashi度量浅析}
+\cfoot{\xiaowuhao \thepage}
+\quad
+
+%----------------------------------------------------------------------------------------
+%	摘要
+%----------------------------------------------------------------------------------------
+
+\newpage
+\thispagestyle{fancy}
+\chead{\xiaowuhao 摘要}
+\cfoot{\xiaowuhao \thepage}
+
+\addcontentsline{toc}{section}{摘要}
+\noindent {\xiaosanhao\hei 摘要}\quad 本文 \\
+
+\noindent {\xiaosihao\hei 关键词}\quad 一；二；三
+
+\newpage
+\thispagestyle{fancy}
+\chead{\xiaowuhao Abstract}
+\cfoot{\xiaowuhao \thepage}
+
+\addcontentsline{toc}{section}{\Arial Abstract}
+\noindent {\xiaosanhao\bf Abstract}\quad This thesis  \\
+
+\noindent {\xiaosihao\bf Keywords}\quad one; two; three
+
+%----------------------------------------------------------------------------------------
+%	目录
+%----------------------------------------------------------------------------------------
+
+\newpage
+\thispagestyle{fancy}
+\fancyhf{}
+\chead{\xiaowuhao 目录}
+\cfoot{\xiaowuhao \thepage}
+\tableofcontents
+\addcontentsline{toc}{section}{目录}
+
+%完成封面到附录后，最后制作英文目录
+%将已完成的所有tex代码复制粘贴至Content.tex文件，将加入目录的部分改为对应的英文即可
+\newpage
+\addcontentsline{toc}{section}{\Arial Contents}
+\includepdfmerge{Contents.pdf,10}
+
+%以下每一章(包括参考文献、附录)都要另起一页，并从奇数页开始
+%可以自行加入如下两行代码添加空白页
+%\newpage
+%\quad
+
+%----------------------------------------------------------------------------------------
+%	第一章 引言
+%----------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{fancy}
+\fancyhead[CE]{\rightmark}
+\fancyhead[CO]{\leftmark}
+\fancyfoot[CE,CO]{\xiaowuhao \thepage}
+\setcounter{page}{0}
+\pagenumbering{arabic}
+
+\section{引言}
+
+在 19 世纪末，Henri Poincare（庞加莱）引入了一个原创性的深刻思想，即在复平面单位圆盘上面构造一个度量，使其在全纯双射下是不变量的思想。可以说庞加莱度量是对于圆盘的特殊化度量。事实上，我们感兴趣的是对于圆盘上面的任意一个连通开集，构造一个共形的或双全纯的不变度量。有多重方法来构造这个度量。其中最典型的方法是采用单值化原理。早期的一个方法是由 Stefan bergman （伯格曼）在 1923 年给出的。Caratheodory 在 1927 年给出了另一个方法。近年来的一个方法是由 Kobayashi（小林昭七）在 1967 年发展起来的。本文将着重研究 Kobayashi 度量的性质和应用，并研究其和 Caratheodory 度量、庞加莱度量的关系。
+
+\newpage
+\pagestyle{fancy}
+\section{预备知识}
+\subsection{复平面上的度量}
+
+$U\subseteq C$ 是复平面上面的开集，连续函数 $\rho(z)$ 被称为 $\Omega$ 上的一个度量，如果它满足：
+
+(1) $\rho(z)\geq 0 $
+
+(2) $\rho(z)$ 在 $\{z \in \Omega :\rho(z)>0\}$ 上面二次连续可微。
+
+对 $\xi \in C $ ,$z \in \Omega $ 我们定义 $\xi$ 在 $z$ 点的长度为：
+$$||\xi||_{\rho,z}=\rho(z)\cdot |\xi|$$
+
+\textbf{例1：}当$\rho(z) \equiv 1$ 时:
+$$||\xi||_{\rho,z}=\rho(z)\cdot |\xi|=|\xi|$$
+
+\textbf{例2：}当$\Omega=\{z\in C:|z|<1\}$, $\rho(z)=\frac{1}{1-|z|^2}$ 时:
+$$||\xi||_{\rho,z}=\frac{|z|}{1-|z|^2}$$
+
+\textbf{复平面上的庞加莱度量}
+
+用 $D$ 表示复平面上的单位圆盘。定义 $D$ 上的度量：
+$$\rho(z) = \frac{1}{1-|z|^2}$$
+
+该度量称为单位圆盘 $ D$ 上的庞加莱度量。
+
+\subsection{复平面上两点之间的距离}
+$\Omega \subseteq C$ 是复平面上面的开集，$\rho(z)$ 为 $\Omega$ 上的一个度量。 $P ,Q$ 是 $\Omega$ 中的两个点，定义 $C_\Omega(P,Q)$ 为所有分段连续可微曲线 $\gamma:[0,1] \rightarrow \Omega $, $ \gamma(0) =  P , \gamma(1) = Q$ 构成的集合。
+
+$P, Q$ 两点之间的距离定义为：
+$$d_{\rho}(P,Q) = inf\{l_{\rho}(\gamma):\gamma \in C_\Omega(P,Q)\}$$
+
+\textbf{等距变换}
+
+$\Omega_1 \Omega_2 $ 是复平面上面的开集，$\rho_1,\rho_2$ 分别为 $\Omega_1,\Omega_2$ 上的度量。函数：
+$$f:\Omega_1 \rightarrow \Omega_2$$
+
+连续可微并且仅有孤立零点。对 $z\in \Omega_1$ 定义 $\rho_2$ 在函数 $f$ 诱导下的拉回映射：
+$$f\ast\rho_2(z)=\rho_2(f(z))\cdot \left|\frac{\partial f}{\partial z}\right|$$
+
+如果 $f\ast\rho_2 = \rho_1$ 对一切 $ z \in \Omega_1$ 都成立，那么 $ f$ 称为等距变换。
+
+\textbf{曲线长度}
+
+$\Omega \subseteq C$ 是复平面上面的开集， $\rho(z)$ 为 $\Omega$ 上的一个度量。如果：
+$$\gamma:[a,b]\rightarrow \Omega $$
+是连续可微曲线。那么它的长度被定义为：
+$$l_\rho(\gamma)=\int_a^b||\dot{\gamma}(t)||_{\rho,\gamma(t)}dt$$
+
+\subsection{复平面上的曲率公式}
+$U \subseteq C$ 是复平面上的开集，$\rho(z)$ 为 $U$ 上的一个度量。对 $z \in U$ $U$ 在度量 $\rho$ 下在 $z$ 点的曲率定义为：
+$$\kappa_{U,\rho}(z)=\kappa(z)=\frac{-\bigtriangleup log(\rho(z))}{\rho(z)^2} $$
+
+($\kappa$ 在 $\rho(z) = 0 $的点没有定义。)
+
+\subsection{正规族理论}
+
+设 $\mathcal{F}$ 是区域 $D( \subseteq \mathbf{C})$ 内的一族解析函数。如果 $\mathcal{F}$ 中的任何函数序列都有一个子序列，在 $D$ 内内闭一致收敛，那么我们说 $\mathcal{F}$ 是一个正规族。对于 $D$ 内任何有界闭集 $K$，如果存在正数 $M = M(K)$，使得  $ \forall f(z) \in \mathcal{F}, \forall z \in K, |f(z)|\leq M $，那么就说 $\mathcal{F}$ 在 $D$ 内内闭一致有界。如果 $ \forall \varepsilon > 0, \exists \delta = \delta( \varepsilon , K ) $ ，使得 $\forall f(z)\in \mathcal{F},\forall z^{'}, z^{''} \in K $ 满足 $|z^{'}-z^{''}| < \delta,|f(z^{'})-f(z^{''})| < \varepsilon $ ，那么就说 $\mathcal{F}$ 在 $D$ 内内闭等度连续。
+
+\textbf{定理 1.} 设 $\mathcal{F}$ 是区域 $D( \subseteq \mathbf{C})$ 内的一族解析函数。如果 $\mathcal{F}$ 在 $D$ 内内闭一致有界，那么它在 $ D $ 内等度连续。
+
+\textbf{定理 2.} 设 $\mathcal{F}$ 是区域 $D( \subseteq \mathbf{C})$ 内的一族解析函数。如果 $\mathcal{F}$ 在 $D$ 内内闭一致有界，那么 $\mathcal{F}$ 是一个正规族。
+
+\textbf{定义 3.} $U \subseteq C$ 是复平面上的开集。$\{g_j\}$ 是定义在 $U $ 上的函数序列。如果对 $\forall \varepsilon > 0$ 和 $U$ 中的任意一个紧集 $K \subseteq U$， 存在正数 $J > 0 s.t.$ 对 $\forall j > J , z \in K$ 都有：
+$$|g_j(z)-g(z)| < \varepsilon$$
+
+则称 $\{g_j\}$ 在 $U$ 上正规收敛于 $g$。
+\newpage
+\section{Kobayashi 度量的定义和性质}
+
+\subsection{Kobayashi 度量的定义}
+$U \subseteq C$ 是复平面上的开集，$D \subseteq C$ 是复平面上的单位圆盘。
+
+\textbf{定义 1.}对 $P \in U$ 定义：
+$$(U,D)_P=\{f : f \mbox{为} D \mbox{到}U\mbox{的全纯函数},f(0) = P \}$$
+
+对 $P\in U$ 定义 $U$ 上的 Kobayashi 度量：
+$$F^U_K(P)=inf\{\frac{1}{|\phi^{'}(0)|}:\phi \in (U,D)_P\}$$
+
+\textbf{定义 2.}
+$$(D,U)_P=\{f : f \mbox{为} U \mbox{到}D\mbox{的全纯函数},f(P) = 0 \}$$
+
+对 $P\in U$ 定义 $U$ 上的 Caratheodory 度量：
+$$F^U_C(P)=sup\{{|\phi^{'}(P)|}:\phi \in (D,U)_P\}$$
+
+回顾现代标准的黎曼映射定理的证明，对于一个给定的单连通开集 $\Omega $ （不是整个平面）。可以构造一个 $\Omega $ 到单位圆盘的共形映射。即固定一个点 $P \in \Omega $，考虑由全纯映射 $\phi : D \rightarrow \Omega $且 $\phi(0) = P $组成的集合。根据正规族理论可以知道存在一个元素 $\phi^{\ast} $，使其在0处的导数的模取到最大值。这个函数 $\phi^{\ast} $就是我们要找的共形映射了。
+
+现在来看 Kobayashi 度量的定义。在 $P $点的 $\xi $方向的度量是 $\frac{|\xi|}{|f^{'}(0)|}$关于圆盘到 $\Omega $的所有的全纯映射的下确界。这说明和极大化 $|f^{'}(0)| $相同。从中我们也可以看到黎曼映射定理的证明和Kobayashi度量的紧密联系。
+
+\subsection{Kobayashi 度量的性质}
+\textbf{性质 1.} 对一切 $P \in U $都有：
+$$F^U_C(P) \leq F^U_K(P)$$
+
+\textbf{证明：}
+
+对 $\phi \in (D,U)_P $和 $\psi \in (U,D)_P $。我们有 $\phi \circ \psi : D \rightarrow D $ 并且 $\phi \circ \psi = 0$。 从而根据 Schwarz's 定理：
+$$|(\phi \circ \psi)^{'}(0)| \leq 1$$
+
+从而得到：
+$$|\phi^{'}(P)| \leq \frac{1}{|\psi^{'}(0)|}$$
+
+对一切 $\phi $取上确界得到：
+$$F^U_C(P) \leq \frac{1}{|\psi^{'}(0)|}$$
+
+对一切 $\psi $取下确界得到：
+$$F^U_C(P) \leq F^U_K(P)$$
+
+\textbf{性质 2.} $U_1 ,U_2 $ 是复平面上面的开集，$\rho_1,\rho_2$ 分别为 $U_1,U_2$ 上的 Kobayashi 度量。如果映射: $h : U_1 \rightarrow U_2 $全纯。那么 $h $使得距离不增，即：$$h\ast\rho_2(z) \leq \rho_1(z), \forall z \in U_1 $$
+
+\textbf{证明：}
+
+固定 $P \in U_1 $令 $Q = h(P)$。对 $\forall \phi \in (U_1,D)_P $ 有：$h \ast \phi \in (U_2,D)_Q $。根据 Kobayashi 度量的定义：
+\begin{equation*}
+\begin{aligned}
+F_K^{U_2}(Q) & \leq \frac{1}{|(h \circ \phi)^{'}(0)|}\\
+& \leq \frac{1}{|h^{'}(P)||\phi^{'}(0)|}
+\end{aligned}
+\end{equation*}
+
+对 $\phi $取下确界我们得到：
+\begin{equation*}
+\begin{aligned}
+F_K^{U_2}(Q) & \leq \frac{1}{|h^{'}(P)|}F_K^{U_1}(P)
+\end{aligned}
+\end{equation*}
+
+两边乘以 $|h^{'}(P)| $得到:
+\begin{equation*}
+\begin{aligned}
+|h^{'}(P)|\cdot F_K^{U_2}(Q) & \leq F_K^{U_1}(P)
+\end{aligned}
+\end{equation*}
+
+即：
+\begin{equation*}
+\begin{aligned}
+h\ast\rho_2(P) \leq \rho_1(P)
+\end{aligned}
+\end{equation*}
+
+由 $P $ 的任意性就得到了我们的结论。
+\\
+
+\textbf{性质 3.} 如果$\gamma : [0,1] \rightarrow U_1 $ 是分段连续可微曲线，则：
+\begin{equation*}
+\begin{aligned}
+l_{\rho_2}(h \ast \gamma) \leq l_{\rho_1}(\gamma)
+\end{aligned}
+\end{equation*}
+
+\textbf{证明：}
+\begin{equation*}
+\begin{aligned}
+l_{\rho_2}(h \ast \gamma)& = \int_a^b||(f \ast \gamma )^{'}(t)||_{\rho_2,f\ast\gamma(t)}dt\\
+ &= \int_a^b||\frac{\partial f }{\partial z}(\gamma(t))\dot{\gamma(t)}||_{\rho_2,f\ast\gamma(t)}dt\\
+  &= \int_a^b\left|\frac{\partial f }{\partial z}\right|\cdot|\dot{\gamma(t)}|\cdot\rho_2(f\ast\gamma(t))dt\\
+    &\leq \int_a^b\left|\frac{\partial f }{\partial z}\right|\cdot|\dot{\gamma(t)}|\cdot\rho_1(\gamma(t))dt\\
+    &\leq l_{\rho_1}(\gamma)
+\end{aligned}
+\end{equation*}
+\\
+
+\textbf{性质 4.} 如果 $P_1,P_2 \in U_1$ 那么有：
+$$d_{\rho_2}(h(P_1),h(P_2))\leq d_{\rho_1}(P_1,P_2)$$
+
+特别的，如果 $h $是 $U_1 $ 到 $U_2$ 的保形双射，那么$h $是 $U_1 $ 到 $U_2 $ 的等距变换：
+$$d_{\rho_2}(h(P_1),h(P_2))= d_{\rho_1}(P_1,P_2)$$
+
+从以上四个性质我们可以看出，性质1刻画了 Kobayashi 度量和 Caratheodory 度量的比较关系。性质2,3,4 则反映了 Kobayashi 度量在全纯映射下的点与点之间的距离关系。作为本小节的结束，我们要证明一个更加精彩的结论：当Kobayashi 度量定义中的 $U \equiv D$ 时候，Kobayashi 度量作为 $ D $ 上的度量就是庞加莱度量！
+
+\subsection{Kobayashi 度量与庞加莱度量}
+
+\textbf{性质 5.} Kobayashi 度量作为 $ D$ 上的度量就是庞加莱度量。
+
+\textbf{证明：}
+
+为了给出命题的证明，我们先证明如下的引理：
+
+\textbf{引理 6.} 设 $\rho(z)$ 是定义在单位圆盘上面的度量。如果对任意的保形双射 $h : D \rightarrow D $ ，在度量 $\rho(z)$ 下 ，$h$ 也是等距变换，那么 $\rho(z)$ 和庞加莱度量仅仅相差一个倍数。
+
+\textbf{引理证明：}
+
+对 $\forall z_0 \in D $, 构造莫比乌斯变换：
+$$h(z) = \frac{z+z_0}{1+\overline{z_0}z}$$
+
+则 $h$ 是等距变换，由此我们得到：
+$$h*\rho(0) = \rho(0)$$
+
+即：
+$$|h^{'}(0)|\rho(h(0)) = \rho(0)$$
+
+所以：
+$$\rho(z_0) = \frac{1}{1-|z_0|^2}\cdot\rho(0)$$
+
+上式表明，$\rho(z)$ 和庞加莱度量只相差一个倍数 $\rho(0) $。
+
+再回到命题的证明： 我们先计算 Caratheodory 度量在 0 处的值。一方面，注意到对 $\forall \phi \in (D,D)_0$, 根据 Schwarz 定理: $| \phi^{'}(0)|\leq 1 $, 根据 Caratheodory 度量的定义得到：
+$$F_C^D(0) \leq 1$$
+
+另一方面，映射：
+$$\phi(\xi)=\xi$$
+
+满足 $\phi \in (D,D)_0$ 并且 $\phi^{'}(0)=1$, 所以我们得到：
+$$F_C^D(0) \geq 1$$
+
+所以：
+$$F_C^D(0) = 1$$
+
+根据性质1得到：
+$$F_K^D(0) \geq F_C^D(0) = 1$$
+
+又由于映射：
+$$\phi(\xi)=\xi$$
+
+满足 $\phi \in (D,D)_0$ 并且 $\phi^{'}(0)=1$, 所以我们得到：
+$$F_K^D(0) \leq 1$$
+
+所以：
+$$F_K^D(0) = 1$$
+
+又根据引理6,单位圆盘 $D$ 上的庞加莱度量和 Kobayashi 度量仅仅相差一个倍数，所以我们可以断定：Kobayashi 度量作为 $ D$ 上的度量就是庞加莱度量。这就证明了我们需要的命题。
+
+在本章中，Caratheodory 度量和 Kobayashi 度量实际上是可以互换的，任意一个Kobayashi 度量的性质，Caratheodory 度量都存在与其相同的性质，他们以共轭的形式被定义，而且一个总是大于等于另一个。
+%----------------------------------------------------------------------------------------
+%	第三章
+%----------------------------------------------------------------------------------------
+
+\newpage
+\section{Kobayashi 度量的应用}
+
+本章节我们主要研究的是 Kobayashi 度量的三个应用。首先我们刻画的是 Kobayashi 度量与全纯映射的关系。
+
+\subsection{Kobayashi 度量与全纯映射}
+
+\textbf{命题 1.} $U \subseteq C$ 是复平面上的开集。$U $ 与 单位圆盘 $ D$ 全纯等价当且仅当$\exists P \in U st $:
+$$ F_C^U(P)=F_K^U(P)\neq 0 $$
+
+\textbf{证明：}
+
+如果 $U$ 与单位圆盘 $D$ 全纯等价，那么存在解析双射：
+$$h : U \rightarrow D$$
+
+对任意 $P \in U$,根据性质2可以得到：
+$$h\ast F_C^D(P) \leq F_C^U(P) $$
+
+同样的有：
+$$(h^{-1})\ast F_C^U(h(P)) \leq F_C^D(h(P))  $$
+
+化简得到：
+$$F_C^U(P) \leq h\ast F_C^D(P) $$
+
+所以有：
+$$F_C^U(P) = h\ast F_C^D(P) $$
+
+又因为（$\rho$ 为单位圆盘上面的庞加莱度量）：
+\begin{equation*}
+\begin{aligned}
+(h\ast F_C^D)(P) &= (h\ast\rho)(P)\\
+&=(h \ast \rho)(P)\\
+&=(h \ast F_K^D)(P)\\
+&=F_K^U(P)
+\end{aligned}
+\end{equation*}
+
+即：
+$$ F_C^U(P)=F_K^U(P) $$
+
+上述定理刻画了复平面上一个开集 $U$ 和单位圆盘全纯等价的充分必要条件。回顾整个定理的条件，我们可以看到：复平面上开集 $U$ 在一个点的特殊性态：$ F_C^U(P)=F_K^U(P)\neq 0 $ 可以影响到 $U $ 全局的形态：全纯等价于单位圆盘。 类比我们学习过的最大模原理，如果解析函数 $f$ 在区域 $D$ 内具有局部性质：$|f(z)|$  在 $D$ 内某一点达到最大值。那么可以导出 $f$ 的全局性质： $f$ 为常值映射。我们可以看到：复平面中的区域在一个点的性态，竟然可以影响到与之相关的一个函数、整个区域的性态！这些精彩的结论都是复变函数所特有的，也是复变函区别于实变函数的精彩之处！作为本章的结束，我们不加证明地给出如下更为加强的命题。
+
+\textbf{命题 4.} $U \subseteq C$ 是复平面上的开集，Kobayashi 度量作为 $U$ 上的度量不恒为零。 全纯映射:
+$$f : U \rightarrow U$$
+
+存在不动点：$f(P) = P$,并且 $f $ 在 $P$ 点保持等距：
+$$f*F_C^U(P) = F_C^U(P)$$
+
+那么 $f$ 是一个双射。
+
+\subsection{Kobayashi 度量与双曲流型}
+
+这一小章节将着重讨论 Kobayashi 度量和曲率、双曲流型的紧密联系。我们将证明：无论是在复平面 $\mathbf{C}$ 上还是在 $\mathbf{C}_0(\mathbf{C}\backslash\{0\})$ 上，都无法定义一个具有严格负曲率的度量。这是本章节最为直接也是最为精彩的结果，从中也可以看到其与 Picard 定理的紧密联系。
+
+\textbf{命题 1.} 设 $\rho$ 为定义在单位圆盘上面的庞加莱度量，$U \subseteq C$ 是复平面上的开集，$\sigma $ 是 $U$ 上的一个度量。如果对于任意的全纯映射： $f : D \rightarrow U$。 $f$ 保持从 $(D,\rho)$ 到 $(U,\sigma)$  的距离不增。那么：
+$$\sigma \leq F_K^U$$
+
+\textbf{证明：}
+
+对于 $\forall z \in U$。对于映射：$\phi : D \rightarrow U $且 $\phi(0) = z$。根据题目的条件：
+$$\phi*\sigma(0)\leq \rho(0)$$
+
+化简得到：
+$$\frac{1}{|\phi^{'}(0)|} \geq \frac{\sigma(z)}{\rho(0)} = \sigma(z)$$
+
+对所有这样的 $\phi$ 取下确界我们得到：
+$$\parallel\xi\parallel_{F_K^U,z} = \inf_{\phi \in (U,D)_z} \frac{|\xi|}{|\phi^{'}(0)|} \geq |\xi| \cdot \sigma(z) = \parallel\xi\parallel_{\sigma,z}$$
+
+该定理表明：$F_K^U$是可以定义的保持从 $(D,\rho)$ 到 $(U,\sigma)$  的距离不增的最大度量。
+
+\textbf{定义 2.} $U \subseteq C$ 是复平面上的开集。如果对 $U$ 中任意的两个不同的点 $P,Q$ 都有：
+$$d_{Kob}(P,Q) > 0$$
+
+那么 $U$ 被称为双曲流型。
+
+为了给出我们的定理4，先给出如下一个引理：
+
+
+\textbf{引理 3.} 设 $f(z)$ 为定义在 $D$ 上的全纯函数，$\rho$ 是定义在单位圆盘上面的庞加莱度量。 $f$ 将 $ D$ 映射成 $U$。$\sigma $ 是定义在 $U$ 上的度量，具有严格的负曲率： $\kappa_{\sigma} \leq -4$。如果 $f : D \rightarrow U$ 是全纯映射，那么：
+$$f*\sigma(z) \leq \rho(z) , \forall z \in  D $$
+
+\textbf{证明：}
+对于 $0 < r < 1$。定义圆盘 $D(0,r)$ 上的度量：
+$$\rho_r(z) =  \frac{r}{r^2-|z|^2}$$
+
+通过直接计算得到： $\kappa_{\rho_r} = -4 $
+
+定义函数：
+$$v=\frac{f*\sigma }{\rho_r}$$
+
+显然 $v$ 是定义在 $D(0,r)$ 上面的非负连续函数。当 $|z| \rightarrow r$ 时， $v \rightarrow 0$。所以 $v$ 在圆盘$D(0,r)$的内部取到最大值 $M$。 我们只要证明 $M \leq 1 $，再令 $r \rightarrow 1^{-}$，就得到了我们的结论。
+
+设 $v$ 在 $\tau$ 处取到极大值。如果 $f*\sigma(\tau)=0$,那么 $v\equiv 0 $。所以我们不妨假定 $f*\sigma(\tau) > 0$。因此$\kappa_{f*\sigma}$在该点有定义。并且:
+$$\kappa_{f*\sigma}(\tau)=\kappa_{\sigma}(f(\tau)) \leq -4 $$
+
+由于 $log v$ 在 $\tau$ 处取到极大值，所以我们有：
+\begin{equation*}
+\begin{aligned}
+0 \geq \Delta logv(\tau) &=\Delta f*\sigma(\tau) - \Delta log \rho_r(\tau)\\
+                         &=-\kappa_{f*\sigma}(\tau)\cdot(f*\sigma(\tau))^2+\kappa_{\rho_r}(\tau)\cdot(\rho_r(\tau))^2\\
+                         &\geq 4(f*\sigma(\tau))^2-4(\rho_r(\tau))^2
+\end{aligned}
+\end{equation*}
+
+移项化简得到：
+$$\frac{f*\sigma(\tau)}{\rho_r(\tau)}\leq 1$$
+
+即：
+$$M \leq 1$$
+
+这就证明了我们的结论。还可以将性质4改成更具有一般的结论。
+
+在 $D(0,\alpha)$ 上定义度量（$\alpha > 0,A>0$）
+$$\rho_{\alpha}^A(z) =  \frac{2\alpha}{\sqrt{A}(\alpha^2-|z|^2)}$$
+
+直接计算得到其曲率有 $-A$。
+\\
+
+\textbf{引理 $3^{*}$.} 假设 $f(z)$ 为定义在 $D(0,\alpha)$ 上的全纯函数，将 $D(0,\alpha)$ 映射成为 $U$。 $\sigma $ 是定义在 $U$ 上的度量，具有严格的负曲率：
+$$\kappa_{\sigma} \leq -B$$
+则：
+$$f*\sigma(z) \leq \frac{\sqrt{A}}{\sqrt{B}}\rho_{\alpha}^A(z)  $$
+对每个$z \in  D(0,\alpha)$ 都成立，这里 $B$ 为正常数。
+\\
+
+\textbf{命题 4.} $U \subseteq C$ 是复平面上的开集。如果存在 $U$ 上的一个非负度量 $\sigma $，使得 $U$ 在此度量下具有严格负曲率：
+$$\kappa_{\sigma} \leq -B < 0 $$
+
+其中 $B$ 是大于 0 的常数，那么 $ U $ 是双曲的。
+
+\textbf{证明：}
+
+设 $\rho $ 为单位圆盘上面的庞加莱度量，设 $f$ 是单位圆盘 $D$ 到 $U$ 的全纯映射，根据 引理3：
+$$f*\sigma \leq \frac{\sqrt{4}}{\sqrt{B}}\rho$$
+
+令$\widetilde{\sigma} = (\sqrt{B}/\sqrt{4})\cdot\sigma$，那么不等式可以写为：
+$$f*\widetilde{\sigma} \leq \rho$$
+
+因此，$f$ 保持从度量空间 $(D,\rho)$ 到 $(U,\widetilde{\sigma})$ 距离不增。所以根据定理1.我们得到:
+$$\widetilde{\sigma} \leq F_K^U$$
+
+即：
+$$C\cdot \sigma \leq F_K^U$$
+
+其中 $C = \sqrt{B}/\sqrt{4} > 0$。由于 $\sigma$ 非负，所以 $F_K^U$ 也是严格大于0的。这就证明了我们的命题。
+
+\textbf{命题 5.} 如果 $U = \mathbf{C}\setminus\{P_1,\ldots,P_k\},k \geq 2$,那么 $U$ 是双曲的 ，但是复平面 $\mathbf{C}$ 和 $\mathbf{C}\setminus\{0\}$  都不是双曲的。
+
+\textbf{证明： }
+
+我们先证明 $\mathbf{C}_{0,1}$ 是双曲的。定义如下的函数：
+$$\mu(z)=\left[\frac{(1+|z|^{1/3})^{1/2}}{|z|^{5/6}}\right]\cdot\left[\frac{(1+|z-1|^{1/3})^{1/2}}{|z-1|^{5/6}}\right]$$
+
+该函数的构造来自龚升老师的《简明复分析》，书中证明了该函数在$\mathbf{C}_{0,1}$上面具有严格的负曲率，所以$\mathbf{C}_{0,1}$ 是双曲的。同理，$ \mathbf{C}\setminus\{P_1,\ldots,P_k\},k \geq 2$是双曲的。
+
+当 $U$ 是整个复平面 $\mathbf{C}$时，
+对 $\forall f \in (D,\mathbf{C})_P$，$f$
+只能是常值映射。所以 $ F_C^U \equiv 0$。
+对于 $U=\mathbf{C}_{0}$，对 $\forall f \in (D,\mathbf{C_{0}})_P$，$f$ 可以延拓到整个复平面上，所以 $f$
+只能是常值映射。所以 $ F_C^U \equiv 0$。
+所以复平面 $\mathbf{C}$ 和 $\mathbf{C}\setminus\{0\}$  都不是双曲的。
+
+从上述的结果上我们可以看到。复平面 $C$ 与 $U = \mathbf{C}\setminus\{P_1,\ldots,P_k\},k \geq 2$ 在几何上有着本质的区别。后者是可以定义具有严格负曲率的度量，而前者是不可能的。这也从另一个角度揭示了了Picard 定理的本质内涵，也为后续Picard 定理的推广奠定了基础。
+
+\subsection{Kobayashi 度量与Picard定理的推广}
+
+在上一个章节中，我们刻画了复平面 $\mathbf{C}$ 与 $\mathbf{C}\setminus\{P_1,\ldots,P_k\},k \geq 2$
+在内蕴几何上的区别。本章节，我们将利用这个区别证明Picard 定理，并且由之导出 Picard 的推广。
+
+\textbf{命题 1.} $U \subseteq C$ 是复平面上的开集。如果 $U$ 是双曲的，那么任何全纯映射:
+$$ f: \textbf{C} \rightarrow U$$
+只能是常数。
+
+\textbf{证明 ：}
+由于 $U$ 是双曲的，所以可以定义$U $ 上具有严格负曲率的度量 $\sigma $。即存在正数 $B > 0$ 使得：
+$$\kappa_{\sigma} \leq -B < 0 $$
+
+对任意的 $\alpha > 0$，考虑映射：
+$$f : D(0,\alpha) \rightarrow U$$
+
+其中 $D(0,\alpha)$ 表示复平面上以0为中心，以 $\alpha $ 为半径的开圆盘。定义 $D(0,\alpha)$ 上的度量：
+$$\rho_{\alpha}^A = \frac{2\alpha}{\sqrt{A}(\alpha^2-|z|^2)}$$
+
+根据4.2引理3，对$\forall z > 0$ 当 $\alpha > |z|$ 时有：
+$$f*\sigma(z) \leq \frac{\sqrt{A}}{\sqrt{B}}\rho_{\alpha}^A(z)$$
+
+令$\alpha \rightarrow +\infty$ 得到：
+$$f*\sigma(z) \leq 0$$
+
+因此：
+$$f*\sigma(z) \equiv 0$$
+
+这只能有：
+$$f^{'}(z) \equiv 0$$
+
+由 $z$ 的任意性，$f$ 只能是常数。
+
+证明了上述的命题以后，我们就容易证明 Picard 小定理了。
+
+\textbf{Picard 小定理} 设$U$ 为全纯函数 $f$ 的值域，如果 $\textbf{C}\setminus U$ 包含了至少两个点，那么 $f$ 是常值映射。
+
+\textbf{证明 ：} 如果 $\textbf{C}\setminus U$ 包含了至少两个点，根据4.2的命题4， $U$ 是双曲的，又根据命题1， $f$ 只能是常值映射。
+
+Picard小定理的条件事实上保证了 $f$ 在复平面 $\mathbf{C}$ 上具有平凡的 Kobayashi 度量。因此，不难对 Picard 小定理做出如下的推广：
+
+\textbf{Picard 小定理的推广} 如果 $N$ 为具有平凡  Kobayashi 度量的流型，而 $M$ 为双曲流型，那么任意全纯映射：
+$$f : N \rightarrow M$$
+只能是常数。
+
+特别的，任意的全纯映射:
+$$f :  \mathbb{C}^m \rightarrow M$$
+在 $M$ 为双曲流型时为常值。而当 $m = 1$ 时，就是我们熟知的 Picard 定理了。
+
+%----------------------------------------------------------------------------------------
+%	参考文献
+%----------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{fancy}
+\fancyhead[CE]{\xiaowuhao 复平面上的Kobayashi度量浅析}
+\fancyhead[CO]{\xiaowuhao 参考文献}
+\fancyfoot[CE,CO]{\xiaowuhao \thepage}
+\addcontentsline{toc}{section}{参考文献}
+\begin{thebibliography}{99} \wuhao
+\setlength{\itemsep}{-6mm}
+\vspace{-1em}
+\bibitem{1}{参考文献1.}
+\bibitem{2}{参考文献2.}
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+%	附录
+%----------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{fancy}
+\fancyhead[CE]{\xiaowuhao 论文题目}
+\fancyhead[CO]{\xiaowuhao 附录}
+\fancyfoot[CE,CO]{\xiaowuhao \thepage}
+\section*{附录}
+\addcontentsline{toc}{section}{附录}
+
+代码、详细证明等。
+
+
+\end{CJK*}
+\end{document}

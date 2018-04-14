@@ -1,0 +1,241 @@
+%Manyuan Tao, 05/08/2016
+\documentclass[a4paper,12pt,twoside]{article}
+
+\usepackage{CJK}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{graphicx}
+	\graphicspath{{figures/}}	%在tex目录下新建figures文件夹存放所有图片
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{mathrsfs}
+\usepackage{bm,array}
+\usepackage{subfigure}
+\usepackage{indentfirst}
+	\setlength{\parindent}{2em}
+\usepackage{enumerate}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,extarrows}
+\usepackage{cite}
+\usepackage[labelsep=space]{caption}
+\usepackage{float}
+\usepackage{fancyhdr}		%设置页眉页脚
+	\renewcommand{\headrulewidth}{0.5pt}
+	\renewcommand{\sectionmark}[1]{\markboth{\xiaowuhao 第\,\thesection\,章\hspace*{1em}#1}{\xiaowuhao 论文题目}}
+\usepackage{pdfpages}
+\usepackage{titlesec}	%设置章节标题格式
+	\titleformat{\section}{\xiaosanhao\hei}{第\,\thesection\,章}{1em}{}
+	\titleformat{\subsection}{\sihao\hei}{\thesubsection}{1em}{}
+	\titleformat{\subsubsection}{\xiaosihao\hei}{\thesubsubsection}{0em}{}
+	\titlespacing{\section}{0pt}{0pt}{1em}
+	\titlespacing{\subsection}{0pt}{0pt}{0em}
+	\titlespacing{\subsubsection}{0pt}{0pt}{0em}
+\usepackage{titletoc}		%设置目录内容格式
+	\titlecontents{section}[0em]{\sihao\bf}{\thecontentslabel\hspace*{1em}}{}{\dotfill\contentspage}[\addvspace{-3mm}]
+	\titlecontents{subsection}[1em]{\xiaosihao\bf}{\,\,\thecontentslabel\hspace*{1em}}{}{\dotfill\contentspage}[\addvspace{-3mm}]
+\renewcommand{\figurename}{\wuhao\bf 图}
+\renewcommand{\thefigure}{\thesection-\arabic{figure}}
+\renewcommand{\contentsname}{\xiaosanhao\bf \centerline{Contents}}
+\renewcommand{\refname}{\xiaosanhao\hei 参考文献}
+%\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}	%若想引用参考文献时使用上标数字可使用此句
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{Proposition}[theorem]{Proposition}
+\newtheorem{Remark}[theorem]{Remark}
+\newtheorem{remark}[theorem]{remark}
+\newtheorem{Corollary}[theorem]{Corollary}
+\numberwithin{equation}{section}	%公式编号跟随章节
+\allowdisplaybreaks
+
+\renewcommand{\baselinestretch}{1.5}	%1.5倍行距
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}		%设置字号
+\newcommand{\sanhao}{\fontsize{16pt}{\baselineskip}\selectfont}
+\newcommand{\xiaosanhao}{\fontsize{15pt}{\baselineskip}\selectfont}
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
+
+\newcommand{\song}{\CJKfamily{song}}    %设置字体
+\newcommand{\hei}{\CJKfamily{hei}}
+\newcommand{\Arial}{\fontfamily{phv}\selectfont}
+
+
+
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+%----------------------------------------------------------------------------------------
+%	封面
+%----------------------------------------------------------------------------------------
+
+\includepdfmerge{cover.pdf}	%制作好封面的pdf后插入
+
+\newpage
+\thispagestyle{empty}	%封面的背面
+\quad
+
+%----------------------------------------------------------------------------------------
+%	诚信书
+%----------------------------------------------------------------------------------------
+
+\includepdfmerge{chengxin.pdf}		%制作好诚信书的pdf后插入
+
+\newpage
+\thispagestyle{empty}	%诚信书的背面
+\quad
+
+%----------------------------------------------------------------------------------------
+%	致谢
+%----------------------------------------------------------------------------------------
+
+\newpage
+\thispagestyle{fancy}
+\chead{\xiaowuhao 致谢}
+\cfoot{\xiaowuhao \thepage}
+
+\section*{\centerline{致谢}}
+\addcontentsline{toc}{section}{Acknowledgements}
+
+\setcounter{page}{0}
+\pagenumbering{Roman}
+
+本学位论文
+
+\newpage
+\thispagestyle{fancy}		%致谢的背面
+\chead{\xiaowuhao 论文题目}
+\cfoot{\xiaowuhao \thepage}
+\quad
+
+%----------------------------------------------------------------------------------------
+%	摘要
+%----------------------------------------------------------------------------------------
+
+\newpage
+\thispagestyle{fancy}
+\chead{\xiaowuhao 摘要}
+\cfoot{\xiaowuhao \thepage}
+
+\addcontentsline{toc}{section}{Abstract (CHN)}
+\noindent {\xiaosanhao\hei 摘要}\quad 本文 \\
+
+\noindent {\xiaosihao\hei 关键词}\quad 一；二；三
+
+\newpage
+\thispagestyle{fancy}
+\chead{\xiaowuhao Abstract}
+\cfoot{\xiaowuhao \thepage}
+
+\addcontentsline{toc}{section}{Abstract (ENG)}
+\noindent {\xiaosanhao\bf Abstract}\quad This thesis  \\
+
+\noindent {\xiaosihao\bf Keywords}\quad one; two; three
+
+%----------------------------------------------------------------------------------------
+%	目录
+%----------------------------------------------------------------------------------------
+
+\newpage
+\thispagestyle{fancy}
+\fancyhf{}
+\chead{\xiaowuhao 目录}
+\cfoot{\xiaowuhao \thepage}
+\quad
+\addcontentsline{toc}{section}{Contents (CHN)}
+
+\newpage
+\thispagestyle{fancy}
+\chead{\xiaowuhao Contents}
+\cfoot{\xiaowuhao \thepage}
+\tableofcontents
+\addcontentsline{toc}{section}{Contents (ENG)}
+
+
+%以下每一章(包括参考文献、附录)都要另起一页，并从奇数页开始
+%可以自行加入如下两行代码添加空白页
+%\newpage
+%\quad
+
+%----------------------------------------------------------------------------------------
+%	第一章 引言
+%----------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{fancy}
+\fancyhead[CE]{\rightmark}
+\fancyhead[CO]{\leftmark}
+\fancyfoot[CE,CO]{\xiaowuhao \thepage}
+\setcounter{page}{0}
+\pagenumbering{arabic}
+
+\section{Introduction}
+
+本文
+
+%----------------------------------------------------------------------------------------
+%	第二章
+%----------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{fancy}
+\section{Basic Knowledge}
+
+\subsection{Metric On A Domain}
+
+\subsection{Distance}
+
+\subsection{Curvature}
+
+\subsection{Normal Family}
+%----------------------------------------------------------------------------------------
+%	第三章
+%----------------------------------------------------------------------------------------
+
+\newpage
+\section{Section 3}
+
+\subsection{Subsection 3.1}
+
+\subsection{Subsection 3.2}
+
+%----------------------------------------------------------------------------------------
+%	第四章
+%----------------------------------------------------------------------------------------
+
+\newpage
+\section{Section 4}
+
+%----------------------------------------------------------------------------------------
+%	参考文献
+%----------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{fancy}
+\fancyhead[CE]{\xiaowuhao 论文题目}
+\fancyhead[CO]{\xiaowuhao 参考文献}
+\fancyfoot[CE,CO]{\xiaowuhao \thepage}
+\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{99} \wuhao
+\setlength{\itemsep}{-6mm}
+\vspace{-1em}
+\bibitem{1}{参考文献1.}
+\bibitem{2}{参考文献2.}
+\end{thebibliography}
+
+
+%----------------------------------------------------------------------------------------
+%	附录
+%----------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{fancy}
+\fancyhead[CE]{\xiaowuhao 论文题目}
+\fancyhead[CO]{\xiaowuhao 附录}
+\fancyfoot[CE,CO]{\xiaowuhao \thepage}
+\section*{附录}
+\addcontentsline{toc}{section}{Appendix}
+
+代码、详细证明等。
+
+
+\end{CJK*}
+\end{document}

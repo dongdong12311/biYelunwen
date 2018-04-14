@@ -1,0 +1,22 @@
+\contentsline {section}{Acknowledgements}{I}
+\contentsline {section}{Abstract (CHN)}{III}
+\contentsline {section}{Abstract (ENG)}{IV}
+\contentsline {section}{Contents (CHN)}{V}
+\contentsline {section}{Contents (ENG)}{VI}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Basic Knowledge}{2}
+\contentsline {subsection}{\numberline {2.1}Metric On A Domain}{2}
+\contentsline {subsection}{\numberline {2.2}Distance}{2}
+\contentsline {subsection}{\numberline {2.3}Curvature}{2}
+\contentsline {subsection}{\numberline {2.4}Normal Family}{2}
+\contentsline {section}{\numberline {3}The Kobayashi Metric}{3}
+\contentsline {subsection}{\numberline {3.1}Definition Of The Kobayashi Metric}{3}
+\contentsline {subsection}{\numberline {3.2}Properties Of The Kobayashi Metric}{3}
+\contentsline {subsection}{\numberline {3.3}The Kobayashi Metric and The Poincare Metric}{3}
+\contentsline {section}{\numberline {4}Some Applications}{4}
+\contentsline {subsection}{\numberline {4.1}Holomorphic Function}{4}
+\contentsline {subsection}{\numberline {4.2}Hyperbolicity and Curvature }{4}
+\contentsline {subsection}{\numberline {4.3}The Picard Theorem}{4}
+\contentsline {section}{References}{5}
+\contentsline {section}{Appendix}{6}
+\contentsfinish 
