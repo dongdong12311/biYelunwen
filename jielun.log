@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.29)  15 APR 2018 13:23
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.3.29)  16 APR 2018 10:09
 entering extended mode
-**C:/Users/Administrator/Desktop/毕业论文/biYelunwen/lunwen.tex
-(C:/Users/Administrator/Desktop/毕业论文/biYelunwen/lunwen.tex
+**C:/Users/Administrator/Desktop/毕业论文/biYelunwen/jielun.tex
+(C:/Users/Administrator/Desktop/毕业论文/biYelunwen/jielun.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (C:\CTEX\MiKTeX\tex\latex\base\article.cls
@@ -346,7 +346,7 @@ Package: titletoc 2011/12/15 v1.6 TOC entries
 )
 \c@theorem=\count113
 
-(C:\Users\Administrator\Desktop\毕业论文\biYelunwen\lunwen.aux)
+(C:\Users\Administrator\Desktop\毕业论文\biYelunwen\jielun.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
@@ -489,6 +489,390 @@ File: extended.enc 2008/12/29 4.8.2
 (C:\CTEX\MiKTeX\tex\latex\cjk\extended.chr
 File: extended.chr 2008/12/29 4.8.2
 )
-!pdfTeX error: pdflatex.exe (file C:/Users/Administrator/Desktop/毕业论文/b
-iYelunwen/cover.pdf): xpdf: reading PDF image failed
- ==> Fatal error occurred, no output PDF file produced!
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Administrator/Desktop/毕业论文/
+biYelunwen/cover.pdf): PDF inclusion: found PDF version <1.7>, but at most vers
+ion <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Administrator/Desktop/毕业论文/
+biYelunwen/cover.pdf): PDF inclusion: found PDF version <1.7>, but at most vers
+ion <1.5> allowed
+<cover.pdf, id=3, page=1, 597.55246pt x 845.07724pt>
+File: cover.pdf Graphic file (type pdf)
+ <use cover.pdf, page 1>
+Package pdftex.def Info: cover.pdf, page1 used on input line 73.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+File: cover.pdf Graphic file (type pdf)
+
+<use cover.pdf, page 1>
+Package pdftex.def Info: cover.pdf, page1 used on input line 73.
+(pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
+File: cover.pdf Graphic file (type pdf)
+ <use cover.pdf, page 1>
+Package pdftex.def Info: cover.pdf, page1 used on input line 73.
+(pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
+File: cover.pdf Graphic file (type pdf)
+ <use cover.pdf, page 1>
+Package pdftex.def Info: cover.pdf, page1 used on input line 73.
+(pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
+File: cover.pdf Graphic file (type pdf)
+
+<use cover.pdf, page 1>
+Package pdftex.def Info: cover.pdf, page1 used on input line 73.
+(pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
+ [1
+
+ <C:/Users/Administrator/Desktop/毕业论文/biYelunwen/cover.pdf>] [2] <cheng
+xin.pdf, id=38, page=1, 597.23125pt x 845.1575pt>
+File: chengxin.pdf Graphic file (type pdf)
+
+<use chengxin.pdf, page 1>
+Package pdftex.def Info: chengxin.pdf, page1 used on input line 83.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: chengxin.pdf Graphic file (type pdf)
+ <use chengxin.pdf, page 1>
+Package pdftex.def Info: chengxin.pdf, page1 used on input line 83.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: chengxin.pdf Graphic file (type pdf)
+
+<use chengxin.pdf, page 1>
+Package pdftex.def Info: chengxin.pdf, page1 used on input line 83.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: chengxin.pdf Graphic file (type pdf)
+ <use chengxin.pdf, page 1>
+Package pdftex.def Info: chengxin.pdf, page1 used on input line 83.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: chengxin.pdf Graphic file (type pdf)
+
+<use chengxin.pdf, page 1>
+Package pdftex.def Info: chengxin.pdf, page1 used on input line 83.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [3 <C:/Users/Administrator/Desktop/毕业论文/biYelunwen/chengxin.pdf>] [4]
+LaTeX Font Info:    Try loading font information for C19+hei on input line 98.
+ (C:\CTEX\CTeX\tex\latex\CJK\GB\c19hei.fd
+File: c19hei.fd 2009/09/23 4.8.2
+)<<c1964.cmap>><<c1960.cmap>>
+LaTeX Font Info:    Try loading font information for C19+song on input line 104
+.
+ (C:\CTEX\CTeX\tex\latex\CJK\GB\c19song.fd
+File: c19song.fd 2009/09/23 4.8.2
+)<<c1937.cmap>><<c1958.cmap>><<c1949.cmap>>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]<<c1942.cm
+ap>><<c1952.cmap>><<c1950.cmap>><<c1954.cmap>><<c1940.cmap>><<c1948.cmap>><<c19
+53.cmap>>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]<<c1963.cmap>><<c1961.cmap>><<c1957.cmap>><<c1945.cmap>><<c1926.cmap>><<c192
+5.cmap>><<c1941.cmap>><<c1943.cmap>><<c1955.cmap>><<c1946.cmap>><<c1965.cmap>><
+<c1959.cmap>><<c1956.cmap>><<c1962.cmap>><<c1939.cmap>><<oml.cmap>><<oms.cmap>>
+<<omx.cmap>>
+LaTeX Font Info:    Try loading font information for U+lasy on input line 131.
+ (C:\CTEX\MiKTeX\tex\latex\base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+
+LaTeX Warning: File u.cmap not found on input line 131.
+
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 131.
+(C:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 131.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 131.
+LaTeX Font Info:    Try loading font information for U+msa on input line 131.
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 131.
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)<<c1951.cmap>><<c1938.cmap>>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <15> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 142.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+ (C:\Users\Administrator\Desktop\毕业论文\biYelunwen\jielun.toc
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 5.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)<<c1947.cmap>>)
+\tf@toc=\write3
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5] <Contents.pdf, id=181, page=10, 597.50829pt x 845.0471pt>
+File: Contents.pdf Graphic file (type pdf)
+
+<use Contents.pdf, page 10>
+Package pdftex.def Info: Contents.pdf, page10 used on input line 170.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: Contents.pdf Graphic file (type pdf)
+ <use Contents.pdf, page 10>
+Package pdftex.def Info: Contents.pdf, page10 used on input line 170.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Contents.pdf Graphic file (type pdf)
+
+<use Contents.pdf, page 10>
+Package pdftex.def Info: Contents.pdf, page10 used on input line 170.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Contents.pdf Graphic file (type pdf)
+ <use Contents.pdf, page 10>
+Package pdftex.def Info: Contents.pdf, page10 used on input line 170.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Contents.pdf Graphic file (type pdf)
+
+<use Contents.pdf, page 10>
+Package pdftex.def Info: Contents.pdf, page10 used on input line 170.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [6 <C:/Users/Administrator/Desktop/毕业论文/biYelunwen/Contents.pdf>]<<c19
+44.cmap>><<c1936.cmap>>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 340--342
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7]<<c1978.cmap>>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 501--503
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 579--581
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 585--588
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+
+LaTeX Warning: File ot164.cmap not found on input line 661.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+Missing character: There is no � in font ptmr7t!
+<<c1984.cmap>>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16] [17] (C:\Users\Administrator\Desktop\毕业论文\biYelunwen\jielun.aux) )
+ 
+Here is how much of TeX's memory you used:
+ 8098 strings out of 495354
+ 112131 string characters out of 3183859
+ 188171 words of memory out of 3000000
+ 10808 multiletter control sequences out of 15000+200000
+ 67657 words of font info for 203 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 39i,18n,43p,701b,653s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/ch
+inese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/
+fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.t
+tf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/
+simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOW
+S/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C
+:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhe
+i.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fon
+ts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WIN
+DOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf
+>{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/WINDOWS/Fonts/simhei.ttf><
+C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/tr
+uetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/C
+TEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese
+/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts
+/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C
+:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chin
+ese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fo
+nts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf
+><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/c
+hinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/F
+onts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chine
+se/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fon
+ts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>
+<C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/ch
+inese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/
+fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.t
+tf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype
+/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS
+/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chi
+nese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmbx8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/CTEX/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/CTEX
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/CTEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/
+CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/ti
+mes/utmr8a.pfb>
+Output written on jielun.pdf (27 pages, 897685 bytes).
+PDF statistics:
+ 500 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
+

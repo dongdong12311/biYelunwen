@@ -128,7 +128,7 @@
 
 论文的第三章研究 Kobayashi 度量的性质。本章首先研究了 Kobayashi 度量与 Caratheodory 度量的比较关系，研究了 Kobayashi 度量在全纯映射下的等距性质。并讨论了Kobayashi 度量与 Poincare 度量的关系，证明了 Kobayashi 度量作为单位圆盘上的度量就是 Poincare 度量。
 
-论文的第三章研究了 Kobayashi 度量的应用。一是研究 Kobayashi 度量与全纯映射的关系，只要  Kobayashi 度量在全纯映射 $f$ 下在某一点保持等距，那么 $f$ 就是一个全纯双射。二是研究了 Kobayashi 度量和双曲流形的关系，证明了具有平凡  Kobayashi 度量的流形不能被非常值的全纯映射映射为双曲流形。第三部分给出了Picard 定理的几何解释及其推广。
+论文的第三章研究了 Kobayashi 度量的应用。一是研究 Kobayashi 度量与全纯映射的关系，只要  Kobayashi 度量在全纯映射 $f$ 下在某一点保持等距，那么 $f$ 就是一个全纯双射。二是研究了 Kobayashi 度量和双曲流形的关系，证明了具有平凡  Kobayashi 度量的流形不能被非常值的全纯映射映射为双曲流形。第三部分利用 Kobayashi 度量给出了Picard 定理的几何解释及其推广。
 
 \noindent {\xiaosihao\hei 关键词}\quad Kobayashi 度量；双曲流形；Picard 定理
 
@@ -220,21 +220,21 @@ $$||\xi||_{\rho,z}=\frac{|z|}{1-|z|^2}$$
 $$\rho(z) = \frac{1}{1-|z|^2}$$
 
 该度量称为单位圆盘 $ D$ 上的庞加莱度量。
+\\
 
 \subsection{复平面上两点之间的距离}
-$\Omega \subseteq C$ 是复平面上面的开集，$\rho(z)$ 为 $\Omega$ 上的一个度量。 $P ,Q$ 是 $\Omega$ 中的两个点，定义 $C_\Omega(P,Q)$ 为所有分段连续可微曲线 $\gamma:[0,1] \rightarrow \Omega $, $ \gamma(0) =  P , \gamma(1) = Q$ 构成的集合。
+$\Omega \subseteq C$ 是复平面上面的开集，$\rho(z)$ 为 $\Omega$ 上的一个度量。 $P ,Q$ 是 $\Omega$ 中的两个点，定义 $C_\Omega(P,Q)$ 为所有分段连续可微曲线: $$\gamma:[0,1] \rightarrow \Omega. ~~~~\gamma(0) =  P , \gamma(1) = Q$$
+构成的集合。
 
 $P, Q$ 两点之间的距离定义为：
-$$d_{\rho}(P,Q) = inf\{l_{\rho}(\gamma):\gamma \in C_\Omega(P,Q)\}$$
+$$d_{\rho}(P,Q) = inf\{l_{\rho}(\gamma):\gamma \in C_\Omega(P,Q)\}$$\\
 
 \textbf{等距变换}
 
 $\Omega_1 \Omega_2 $ 是复平面上面的开集，$\rho_1,\rho_2$ 分别为 $\Omega_1,\Omega_2$ 上的度量。函数：
 $$f:\Omega_1 \rightarrow \Omega_2$$
-
 连续可微并且仅有孤立零点。对 $z\in \Omega_1$ 定义 $\rho_2$ 在函数 $f$ 诱导下的拉回映射：
 $$f\ast\rho_2(z)=\rho_2(f(z))\cdot \left|\frac{\partial f}{\partial z}\right|$$
-
 如果 $f\ast\rho_2 = \rho_1$ 对一切 $ z \in \Omega_1$ 都成立，那么 $ f$ 称为等距变换。
 
 \textbf{曲线长度}
@@ -245,10 +245,12 @@ $$\gamma:[a,b]\rightarrow \Omega $$
 $$l_\rho(\gamma)=\int_a^b||\dot{\gamma}(t)||_{\rho,\gamma(t)}dt$$
 
 \subsection{复平面上的曲率公式}
-$U \subseteq C$ 是复平面上的开集，$\rho(z)$ 为 $U$ 上的一个度量。对 $z \in U$ $U$ 在度量 $\rho$ 下在 $z$ 点的曲率定义为：
+$U \subseteq C$ 是复平面上的开集，$\rho(z)$ 为 $U$ 上的一个度量。对 $\forall z \in U$ ，$U$ 在度量 $\rho$ 下在 $z$ 点的曲率定义为：
 $$\kappa_{U,\rho}(z)=\kappa(z)=\frac{-\bigtriangleup log(\rho(z))}{\rho(z)^2} $$
 
 ($\kappa$ 在 $\rho(z) = 0 $的点没有定义。)
+
+可以证明，该定义和微分几何中曲率的定义是等价的。
 
 \subsection{正规族理论}
 
@@ -290,7 +292,7 @@ $$F^U_C(P) \leq F^U_K(P)$$
 
 \textbf{证明：}
 
-对 $\phi \in (D,U)_P $和 $\psi \in (U,D)_P $。我们有 $\phi \circ \psi : D \rightarrow D $ 并且 $\phi \circ \psi = 0$。 从而根据 Schwarz's 定理：
+对 $\phi \in (D,U)_P $和 $\psi \in (U,D)_P $。我们有 $\phi \circ \psi : D \rightarrow D $ 并且 $(\phi \circ \psi) (0)= 0$。 从而根据 Schwarz's 定理：
 $$|(\phi \circ \psi)^{'}(0)| \leq 1$$
 
 从而得到：
@@ -306,7 +308,7 @@ $$F^U_C(P) \leq F^U_K(P)$$
 
 \textbf{证明：}
 
-固定 $P \in U_1 $令 $Q = h(P)$。对 $\forall \phi \in (U_1,D)_P $ 有：$h \ast \phi \in (U_2,D)_Q $。根据 Kobayashi 度量的定义：
+固定 $P \in U_1 $令 $Q = h(P)$。对 $\forall \phi \in (U_1,D)_P $ 有：$h \circ \phi \in (U_2,D)_Q $。根据 Kobayashi 度量的定义：
 \begin{equation*}
 \begin{aligned}
 F_K^{U_2}(Q) & \leq \frac{1}{|(h \circ \phi)^{'}(0)|}\\
@@ -352,7 +354,7 @@ l_{\rho_2}(h \ast \gamma)& = \int_a^b||(f \ast \gamma )^{'}(t)||_{\rho_2,f\ast\g
  &= \int_a^b||\frac{\partial f }{\partial z}(\gamma(t))\dot{\gamma(t)}||_{\rho_2,f\ast\gamma(t)}dt\\
   &= \int_a^b\left|\frac{\partial f }{\partial z}\right|\cdot|\dot{\gamma(t)}|\cdot\rho_2(f\ast\gamma(t))dt\\
     &\leq \int_a^b\left|\frac{\partial f }{\partial z}\right|\cdot|\dot{\gamma(t)}|\cdot\rho_1(\gamma(t))dt\\
-    &\leq l_{\rho_1}(\gamma)
+    &= l_{\rho_1}(\gamma)
 \end{aligned}
 \end{equation*}
 \\
@@ -363,7 +365,7 @@ $$d_{\rho_2}(h(P_1),h(P_2))\leq d_{\rho_1}(P_1,P_2)$$
 特别的，如果 $h $是 $U_1 $ 到 $U_2$ 的保形双射，那么$h $是 $U_1 $ 到 $U_2 $ 的等距变换：
 $$d_{\rho_2}(h(P_1),h(P_2))= d_{\rho_1}(P_1,P_2)$$
 
-从以上四个性质我们可以看出，性质1刻画了 Kobayashi 度量和 Caratheodory 度量的比较关系。性质2,3,4 则反映了 Kobayashi 度量在全纯映射下的点与点之间的距离关系。作为本小节的结束，我们要证明一个更加精彩的结论：当Kobayashi 度量定义中的 $U \equiv D$ 时候，Kobayashi 度量作为 $ D $ 上的度量就是庞加莱度量！
+从以上四个性质我们可以看出，性质1刻画了 Kobayashi 度量和 Caratheodory 度量的比较关系。性质2,3,4 则反映了 Kobayashi 度量在全纯映射下的点与点之间的距离关系、曲线与曲线之间的比较关系。最后，作为本章节的结束，我们要证明一个更加精彩的结论：当Kobayashi 度量定义中的 $U \equiv D$ 时候，Kobayashi 度量作为 $ D $ 上的度量就是庞加莱度量！
 
 \subsection{Kobayashi 度量与庞加莱度量}
 
@@ -453,7 +455,6 @@ $$F_C^U(P) = h\ast F_C^D(P) $$
 \begin{equation*}
 \begin{aligned}
 (h\ast F_C^D)(P) &= (h\ast\rho)(P)\\
-&=(h \ast \rho)(P)\\
 &=(h \ast F_K^D)(P)\\
 &=F_K^U(P)
 \end{aligned}

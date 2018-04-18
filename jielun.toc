@@ -11,14 +11,14 @@
 \contentsline {subsection}{\numberline {2.2}复平面上两点之间的距离}{2}
 \contentsline {subsection}{\numberline {2.3}复平面上的曲率公式}{3}
 \contentsline {subsection}{\numberline {2.4}正规族理论}{3}
-\contentsline {section}{\numberline {3}Kobayashi 度量的定义和性质}{4}
-\contentsline {subsection}{\numberline {3.1}Kobayashi 度量的定义}{4}
-\contentsline {subsection}{\numberline {3.2}Kobayashi 度量的性质}{4}
-\contentsline {subsection}{\numberline {3.3}Kobayashi 度量与庞加莱度量}{6}
-\contentsline {section}{\numberline {4}Kobayashi 度量的应用}{8}
-\contentsline {subsection}{\numberline {4.1}Kobayashi 度量与全纯映射}{8}
-\contentsline {subsection}{\numberline {4.2}Kobayashi 度量与双曲流形}{10}
-\contentsline {subsection}{\numberline {4.3}Kobayashi 度量与 Picard 定理的推广}{13}
-\contentsline {section}{参考文献}{15}
-\contentsline {section}{附录}{16}
+\contentsline {section}{\numberline {3}Kobayashi 度量的定义和性质}{5}
+\contentsline {subsection}{\numberline {3.1}Kobayashi 度量的定义}{5}
+\contentsline {subsection}{\numberline {3.2}Kobayashi 度量的性质}{5}
+\contentsline {subsection}{\numberline {3.3}Kobayashi 度量与庞加莱度量}{7}
+\contentsline {section}{\numberline {4}Kobayashi 度量的应用}{9}
+\contentsline {subsection}{\numberline {4.1}Kobayashi 度量与全纯映射}{9}
+\contentsline {subsection}{\numberline {4.2}Kobayashi 度量与双曲流形}{11}
+\contentsline {subsection}{\numberline {4.3}Kobayashi 度量与 Picard 定理的推广}{14}
+\contentsline {section}{参考文献}{16}
+\contentsline {section}{附录}{17}
 \contentsfinish 

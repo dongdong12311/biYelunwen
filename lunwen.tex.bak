@@ -1,3 +1,4 @@
+%Manyuan Tao, 05/08/2016
 \documentclass[a4paper,12pt,twoside]{article}
 \usepackage{ccmap}
 \usepackage{CJK}
@@ -122,7 +123,7 @@
 \begin{center}
 \noindent {\xiaosanhao\hei 摘要}
 \end{center}
-\quad
+\quad 
 
 本文讨论复平面上的几个重要度量：Poincare 度量、Caratheodory 度量、 Kobayashi 度量。在第二章中主要讨论了复变函数中的几何性质，复平面上的度量、复平面上的两点的距离、复平面上的曲率公式以及正规族理论，在第三章中讨论了 Kobayashi 度量的定义和性质，并讨论了 Kobayashi 度量和 Poincare 度量的关系。在第四章中研究了 Kobayashi 度量的应用，主要讨论了 Kobayashi 度量与全纯映射的关系、 Kobayashi 度量与双曲流形的关系、 Kobayashi 度量与 Picard 定理的关系。
 
@@ -143,11 +144,11 @@
 \end{center}
 \quad
 
-In this thesis, we study important concepts of metric on a domain :the Poincare metric,the Caratheodory metric and the Kobayashi metric。In chapter 2 we consider the geometry viewpoint of complex analysis,the metric on a domain,the distance between two points, the curvature and the normal familly.In chapter 3 we consider the definition of the Kobayashi metric and its properties. And we study the relationship between the Kobayashi metric and the Poincare metric.In chapter 4 we study some applications of Kobayashi metric on entire function, hyperbolic surface and the Picard theorem.
+In this thesis, we study important concepts of metric on a domain :the Poincare metric,the Caratheodory metric and the Kobayashi metric。In chapter 2 we consider the geometry viewpoint of complex analysis,the metric on a domain,the distance between two points, the curvature and the normal familly.In chapter 3 we consider the definition of the Kobayashi metric and its properties. And we study the relationship between the Kobayashi metric and the Poincare metric.In chapter 4 we study some applications of Kobayashi metric on entire function, hyperbolic surface and the Picard theorem. 
 
-In chapter 3, we study some properties of the Kobayashi metric on a domain.First, we consider the relationship between the Kobayashi metric and the Caratheodory metric.Second we study the isometries of the Kobayashi metric under a conformal map.Last we study  the relationship between the Kobayashi metric and the Poincare metric.
+论文的第三章研究 Kobayashi 度量的性质。本章首先研究了 Kobayashi 度量与 Caratheodory 度量的比较关系，研究了 Kobayashi 度量在全纯映射下的等距性质。并讨论了Kobayashi 度量与 Poincare 度量的关系，证明了 Kobayashi 度量作为单位圆盘上的度量就是 Poincare 度量。
 
-In chapter 4, we study some applications of the Kobayashi metric on a domain.First,we prove that the global condition that f map U to U,together with differential condition at P, forces f to be one-to-one and onto.Second we discuss the hyperbolic surface equipped with the Kobayashi metric.Finally we prove the Picard theorem.
+论文的第三章研究了 Kobayashi 度量的应用。一是研究 Kobayashi 度量与全纯映射的关系，只要  Kobayashi 度量在全纯映射 $f$ 下在某一点保持等距，那么 $f$ 就是一个全纯双射。二是研究了 Kobayashi 度量和双曲流形的关系，证明了具有平凡  Kobayashi 度量的流形不能被非常值的全纯映射映射为双曲流形。第三部分给出了Picard 定理的几何解释及其推广。
 
 \noindent {\xiaosihao\bf Keywords}\quad Kobayashi Metric; Hyperbolicity; Picard Theorem
 
